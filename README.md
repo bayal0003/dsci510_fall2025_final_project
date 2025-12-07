@@ -5,9 +5,8 @@ This is a dsci fall 2025 final project
 # <Project title> MLB Umpire Data Analysis
 Project scope update:
 Originally, my main goal for my project was to analyze umpire ejections and see if the umpire’s poor accuracy led to more ejections. After trying to make python codes to help collect and process data, I have hit multiple roadblocks. As a result, I am slightly updating the question for my project. My new question is, if a player is ejected from a game, is that team more likely to lose the game? 
-Right now, I have no trouble working with the csv file with a list of all MLB umpire ejections. I am able to create boxplots easily showing what umpires eject the most, who get ejected the most, and the reason they got ejected the most.
-My main challenge right now is getting the result of the game in which a team was ejected. I was able to create a python code that uses MLB API to give me the box score of the game. My main issue is that the format of the GAMEID from retro sheet is different from what the MLB uses for API. Once I figure that out, I will be able to pull the game data and store who the winner is in my database.
-Finally, to use my third source, there is a Kaggle database with MLB Umpire scorecards, I can find the top 10 umpires with ejections in the range of the Kaggle Database(2015-2022) and compare their overall accuracies and see if the umpires who love to eject players have a worse accuracy.
+
+I was having difficulty converting my Jupyter notebook to a python script and calling all my functions. I was able to get the code to work in a singular large Jupyter notebook, but could not separate the functions and call them without the code crashing. So I am uploading my Jupyter notebook with all my work in main.ipynb
 
 
 # Data sources
@@ -19,17 +18,12 @@ https://www.kaggle.com/datasets/mattop/mlb-baseball-umpire-scorecards-2015-2022?
 -kaggle umpire scorecard data set, I will use to compare umpire accuracy
 
 # Results 
-My findings right now are still pending. I am able to find the leading umpires for ejections and the leading reasons for ejections, now i need to find the data that tells me the outcome of the game
+I found in my dataset of 586 games with an ejection, the team that received an ejection would lost 65.7% of the time. I also found that most of the ejections took place when the weather was between 70-80 degrees.
 
 # Installation
 pip install kaggle pandas matplotlib
 
 # Running analysis 
-_update these instructions_
+My plots are in the Jupyter notebook main
 
 
-From `src/` directory run:
-
-`python main.py `
-
-Results will appear in `results/` folder. All obtained will be stored in `data/`
